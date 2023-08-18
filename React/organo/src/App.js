@@ -7,6 +7,10 @@ function App() {
 
   const [colaboradores, setColaboradores] = useState([])
 
+  function deletarColaborador() {
+    console.log('deletando colaborador')
+  }
+
   const aoNovoColaboradorAdicionado = (colaborador) => {
     debugger
     setColaboradores([...colaboradores, colaborador])
