@@ -6,6 +6,13 @@ import Time from "./componentes/Time";
 
 function App() {
 
+  const [colaboradores, setColaboradores] = useState([])
+
+  const aoNovoColaboradorAdicionado = (colaborador) => {
+    debugger
+    setColaboradores([...colaboradores, colaborador])
+  }
+
   const times = [
     {
       nome: 'Programação',
@@ -191,7 +198,6 @@ function App() {
     },
   ]
 
-  const [colaboradores, setColaboradores] = useState(inicial)
 
   function deletarColaborador() {
     console.log('deletando colaborador');
