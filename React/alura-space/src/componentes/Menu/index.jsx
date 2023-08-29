@@ -1,9 +1,9 @@
 import React from 'react'
-import home from '../../assets/home.png'
-import maisCurtidas from '../../assets/mais-curtidas.png'
-import maisVistas from '../../assets/mais-vistas.png'
-import novas from '../../assets/novas.png'
-import surpreendaMe from '../../assets/surpreenda-me.png'
+import home from '../../assets/icones/home.png'
+import maisCurtidas from '../../assets/icones/mais-curtidas.png'
+import maisVistas from '../../assets/icones/mais-vistas.png'
+import novas from '../../assets/icones/novas.png'
+import surpreendaMe from '../../assets/icones/surpreenda-me.png'
 import styles from './Menu.module.scss'
 
 export default function Menu() {
