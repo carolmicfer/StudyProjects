@@ -1,16 +1,16 @@
 import './Post.css';
 import styles from './Post.module.css';
 
-import { Route, Routes, useParams } from "react-router-dom"
-import posts from "json/posts.json";
-import PostModelo from "componentes/PostModelo";
-import ReactMarkdown from "react-markdown";
-import NaoEncontrada from 'paginas/NaoEncontrada';
 import PaginaPadrao from 'componentes/PaginaPadrao';
 import PostCard from 'componentes/PostCard';
+import PostModelo from "componentes/PostModelo";
+import posts from "json/posts.json";
+import NaoEncontrada from 'paginas/NaoEncontrada';
+import ReactMarkdown from "react-markdown";
+import { Route, Routes, useParams } from "react-router-dom";
 
 export default function Post() {
-    const parametros = useParams();
+    const parametros = useParams(); //params é os valores que estão na url 
 
     const post = posts.find((post) => {
         return post.id === Number(parametros.id);
