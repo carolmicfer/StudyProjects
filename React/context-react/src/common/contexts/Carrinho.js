@@ -3,7 +3,7 @@ import { usePagamento } from './Pagamento';
 import { UsuarioContext } from './Usuario';
 
 const CarrinhoContext = createContext();
-CarrinhoContext.displayName = "Carrinho"
+CarrinhoContext.displayName = "Carrinho" 
 
 export default function CarrinhoProvider({ children }) {
   const [carrinho, setCarrinho] = useState([]);
