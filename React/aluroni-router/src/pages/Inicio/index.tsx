@@ -1,13 +1,13 @@
-import cardapio from 'data/cardapio.json';
-import styles from './Inicio.module.scss';
-import stylesTema from 'styles/Tema.module.scss';
 import nossaCasa from 'assets/nossa_casa.png';
+import cardapio from 'data/cardapio.json';
 import { useNavigate } from 'react-router-dom';
+import stylesTema from 'styles/Tema.module.scss';
 import { Prato } from 'types/Prato';
+import styles from './Inicio.module.scss';
 
 export default function Inicio() {
-  let pratosRecomendados = [...cardapio];
-  pratosRecomendados = pratosRecomendados.sort(() => 0.5 - Math.random()).splice(0, 3);
+  let pratosRecomendados = [...cardapio]; //não coloca o cardápio diretamente para não alterar o cardápio original
+  pratosRecomendados = pratosRecomendados.sort(() => 0.5 - Math.random()).splice(0, 3); //embaralha os pratos aleatoriamente e pega os 3 primeiros
   const navigate = useNavigate();
 
   function redirecionarParaDetalhes(prato: Prato) {

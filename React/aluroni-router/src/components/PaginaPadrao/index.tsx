@@ -1,6 +1,6 @@
-import styles from './PaginaPadrao.module.scss';
-import { Outlet } from 'react-router-dom';
+import { Outlet } from 'react-router-dom'; //Outlet é o componente que renderiza o conteúdo da rota, "children" do react-router-dom
 import stylesTema from 'styles/Tema.module.scss';
+import styles from './PaginaPadrao.module.scss';
 
 export default function PaginaPadrao() {
   return (
